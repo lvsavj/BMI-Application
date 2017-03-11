@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bmi_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.akshayjadhav.project3.BmiResult">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="BMI Result"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text=""
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvUn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="Below 18.5 is Underweight" />
+
+    <TextView
+        android:id="@+id/tvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUn"
+        android:layout_centerHorizontal="true"
+        android:text="Between 18.5 and 25 is Normal" />
+
+    <TextView
+        android:id="@+id/tvOv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNo"
+        android:layout_centerHorizontal="true"
+        android:text="Between 25 and 30 is Overweight" />
+
+    <TextView
+        android:id="@+id/tvOb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOv"
+        android:layout_centerHorizontal="true"
+        android:text="Above 30 is Obese" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="Share" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnShare"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnShare"
+        android:layout_alignBottom="@+id/btnShare"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Save" />
+
+</RelativeLayout>
