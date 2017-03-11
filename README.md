@@ -6,4 +6,4 @@ Optimisations are welcome
 
 Screenshots: 
 
-![ScreenShot](https://raw.github.com/lvsavj/BMI-Application/screenshots)
+https://github.com/lvsavj/BMI-Application/issues/1
